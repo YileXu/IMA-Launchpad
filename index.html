@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" >
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" type="text/javascript"></script>
+
+  <title>IMA Launchpad</title>
+</head>
+
+<body>
+  <!-- Classic Drum Sounds -->
+  <!-- From https://www.youtube.com/watch?v=O-8aQV6V42g -->
+  <audio id="Kick" src="imgaudio/kick.wav"></audio>
+  <audio id="Snare" src="imgaudio/snare.wav"></audio>
+  <audio id="Hi-hat" src="imgaudio/hi_hat.wav"></audio>
+  <!-- Sounds of Shanghai -->
+  <audio id="Trash (Short)" src="imgaudio/trash_can_short.wav"></audio>
+  <audio id="Trash (Long)" src="imgaudio/trash_can_long.wav"></audio>
+  <audio id="Scan In" src="imgaudio/scan_beep.wav"></audio>
+  <audio id="Door Unlock" src="imgaudio/door_unlock.wav"></audio>
+  <audio id="Airpods Case" src="imgaudio/airpods_box.wav"></audio>
+  <audio id="Chair Pressing" src="imgaudio/chair.wav"></audio>
+  <audio id="Door" src="imgaudio/door.wav"></audio>
+  <audio id="Toothbrush Buzz" src="imgaudio/electric_toothbrush.wav"></audio>
+  <audio id="Door Lock" src="imgaudio/lock_door.wav"></audio>
+  <audio id="Cabinet Tap" src="imgaudio/tap_cabinet.wav"></audio>
+  <audio id="Water" src="imgaudio/water.wav"></audio>
+
+  <h1>IMA LAUNCHPAD</h1>
+
+  <div id="userInput">
+    <select id="dropdown">
+      <option disabled>Classic Drums</option>
+      <option value="Kick">Kick</option>
+      <option value="Snare">Snare</option>
+      <option value="Hi-hat">Hi-hat</option>
+      <option disabled>Sounds of Shanghai</option>
+      <option value="Trash (Short)">Trash Can (short)</option>
+      <option value="Trash (Long)">Trash Can (long)</option>
+      <option value="Scan In">Scanning In Beep</option>
+      <option value="Door Unlock">Door Unlock</option>
+      <option value="Airpods Case">Airpods Case</option>
+      <option value="Chair Pressing">Chair Pressing</option>
+      <option value="Door">Door</option>
+      <option value="Toothbrush Buzz">Toothbrush Buzz</option>
+      <option value="Door Lock">Door Locking</option>
+      <option value="Cabinet Tap">Cabinet Tapping</option>
+      <option value="Water">Water</option>
+    </select>
+
+    <input type="text" id="input" minlength="1" maxlength="1" size="10"></input>
+
+    <button id="set" onclick="setKey()">Set</button>
+    <br>
+    <button id="rave" onclick="raveMode()">Rave Mode On</button>
+  </div>
+
+  <br>
+
+  <div id="keyboard">
+    <div>
+      <input type="button" class="key" id="q" onclick="screenKey(this)" value="Q"></input>
+      <input type="button" class="key" id="w" onclick="screenKey(this)" value="W"></input>
+      <input type="button" class="key" id="e" onclick="screenKey(this)" value="E"></input>
+      <input type="button" class="key" id="r" onclick="screenKey(this)" value="R"></input>
+      <input type="button" class="key" id="t" onclick="screenKey(this)" value="T"></input>
+      <input type="button" class="key" id="y" onclick="screenKey(this)" value="Y"></input>
+      <input type="button" class="key" id="u" onclick="screenKey(this)" value="U"></input>
+      <input type="button" class="key" id="i" onclick="screenKey(this)" value="I"></input>
+      <input type="button" class="key" id="o" onclick="screenKey(this)" value="O"></input>
+      <input type="button" class="key" id="p" onclick="screenKey(this)" value="P"></input>
+    </div>
+    <div>
+      <input type="button" class="key" id="a" onclick="screenKey(this)" value="A"></input>
+      <input type="button" class="key" id="s" onclick="screenKey(this)" value="S"></input>
+      <input type="button" class="key" id="d" onclick="screenKey(this)" value="D"></input>
+      <input type="button" class="key" id="f" onclick="screenKey(this)" value="F"></input>
+      <input type="button" class="key" id="g" onclick="screenKey(this)" value="G"></input>
+      <input type="button" class="key" id="h" onclick="screenKey(this)" value="H"></input>
+      <input type="button" class="key" id="j" onclick="screenKey(this)" value="J"></input>
+      <input type="button" class="key" id="k" onclick="screenKey(this)" value="K"></input>
+      <input type="button" class="key" id="l" onclick="screenKey(this)" value="L"></input>
+    </div>
+    <div>
+      <input type="button" class="key" id="z" onclick="screenKey(this)" value="Z"></input>
+      <input type="button" class="key" id="x" onclick="screenKey(this)" value="X"></input>
+      <input type="button" class="key" id="c" onclick="screenKey(this)" value="C"></input>
+      <input type="button" class="key" id="v" onclick="screenKey(this)" value="V"></input>
+      <input type="button" class="key" id="b" onclick="screenKey(this)" value="B"></input>
+      <input type="button" class="key" id="n" onclick="screenKey(this)" value="N"></input>
+      <input type="button" class="key" id="m" onclick="screenKey(this)" value="M"></input>
+    </div>
+  </div>
+
+</body>
+
+
+</html>
